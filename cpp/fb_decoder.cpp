@@ -6,7 +6,7 @@
 int main(int argc, const char *argv[]) {
     // Read from bin file
     std::ifstream infile;
-    infile.open("../fb_bytes.bin", std::ios::binary | std::ios::in);
+    infile.open(argv[1], std::ios::binary | std::ios::in);
     infile.seekg(0,std::ios::end);
     int length = infile.tellg();
     infile.seekg(0,std::ios::beg);

@@ -1,6 +1,6 @@
 
-from io import RawIOBase
 import flatbuffers
+import sys
 
 import Person
 import Group
@@ -9,7 +9,7 @@ import ClientList
 from ClientUnion import ClientUnion
 
 # Read from bin file
-buf = open('../fb_bytes.bin','rb').read()
+buf = open(sys.argv[1],'rb').read()
 
 client_list = ClientList.ClientList.GetRootAs(buf,0)
 

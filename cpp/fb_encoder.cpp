@@ -50,7 +50,7 @@ int main(int argc, const char *argv[]) {
     int buf_size = builder.GetSize();
 
     std::ofstream fout;
-    fout.open("../fb_bytes.bin", std::ios_base::binary | std::ios_base::out);
+    fout.open(argv[1], std::ios_base::binary | std::ios_base::out);
 
     if(fout.is_open()){
         fout.write((char*)buf, buf_size);

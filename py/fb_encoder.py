@@ -1,5 +1,6 @@
 
 import flatbuffers
+import sys
 
 import Person
 import Group
@@ -68,4 +69,4 @@ builder.Finish(clients)
 buf = builder.Output()
 
 # Write as bin file
-open('../fb_bytes.bin','wb').write(buf);
+open(sys.argv[1],'wb').write(buf);

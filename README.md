@@ -33,12 +33,12 @@ $ g++ -I ../ ../cpp/fb_decoder.cpp -o fb_decoder.exe
 
 - run **encoder**
 ```
-$ fb_encoder.exe 
+$ fb_encoder.exe ..\fb_bytes.bin 
 ```
 
 - run **decoder**
 ```
-$ fb_decoder.exe
+$ fb_decoder.exe ..\fb_bytes.bin 
 ```
 
 ## python : steps to execute

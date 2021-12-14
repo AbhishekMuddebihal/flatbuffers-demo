@@ -56,10 +56,10 @@ Above cmd will generate **ORM classes** in py\ folder
 
 - run **encoder**
 ```
-$ python fb_encoder.py
+$ python fb_encoder.py ..\fb_bytes.bin
 ```
 
 - run **decoder**
 ```
-$ python fb_decoder.py
+$ python fb_decoder.py ..\fb_bytes.bin
 ```

@@ -1,0 +1,28 @@
+
+table Person{
+    name : string;
+    age : short;
+    weight : float;
+    gender : string;
+}
+
+table Group{
+    groupname : string;
+    average_age : float;
+    average_weight : float;
+    names : [string];
+}
+
+union ClientUnion{
+    Person, Group
+}
+
+table Client{
+    client: ClientUnion;
+}
+
+table ClientList{
+    clients : [Client];
+}
+
+root_type ClientList;
